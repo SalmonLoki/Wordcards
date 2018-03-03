@@ -53,14 +53,20 @@
         tools:layout_editor_absoluteY="260dp"
         android:background="@color/colorNestedBackground">
 
+
         <LinearLayout
             android:id="@+id/linear_layout_main"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:background="@color/colorNestedBackground"
-
-            android:padding="10dp"/>
+            android:padding="10dp">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>
 

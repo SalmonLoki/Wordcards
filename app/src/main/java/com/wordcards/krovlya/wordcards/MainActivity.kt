@@ -1,7 +1,6 @@
 package com.wordcards.krovlya.wordcards
 
 import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.Toolbar
 import android.os.Bundle
 import android.view.View
 import android.support.design.widget.CollapsingToolbarLayout
@@ -14,7 +13,7 @@ import android.view.LayoutInflater
 import android.widget.EditText
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.one_card.view.*
-import android.content.DialogInterface
+import android.support.v7.widget.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -79,6 +78,7 @@ class MainActivity : AppCompatActivity() {
                         newCard.info_text_english.text = userInputEnglish.text
 
                         allCards.add(newCard)
+                        // recycler_view_main.addView(newCard)
                         linear_layout_main.addView(newCard)
                     }
 
@@ -90,5 +90,4 @@ class MainActivity : AppCompatActivity() {
             alertDialog.show()
         }
     }
-
 }
